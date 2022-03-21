@@ -10,14 +10,13 @@ public class ExerciseTwo {
         List<Integer> numbersArray = new ArrayList<>(usersNumber);
 
         for (int i = 0; i < usersNumber; i++) {
-
             System.out.println("Give a random integer number: ");
             int usersInput = scanner.nextInt();
             numbersArray.add(usersInput);
-
-
         }
+
         System.out.println("Array consist of values: " + numbersArray);
+
         int sum = 0;
         for (int i = 0; i < usersNumber; i++) {
             sum += numbersArray.get(i);
@@ -27,6 +26,5 @@ public class ExerciseTwo {
 
         int maxValue = Collections.max(numbersArray);
         System.out.println("The largest given value is: "+maxValue);
-
     }
 }
